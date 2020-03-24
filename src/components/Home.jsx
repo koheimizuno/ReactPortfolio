@@ -1,11 +1,9 @@
 import { Component } from "react";
-import { Col, Container, Row } from "reactstrap";
 import './Home.scss'
 import { Title } from "./Title";
 import { Tabs } from "./Tabs";
 
 export class Home extends Component {
-
     constructor(props){
         super(props);
 
@@ -13,7 +11,6 @@ export class Home extends Component {
             titleFocus: true,
             height: window.innerHeight
         }
-
         this.toggleTitleFocus = this.toggleTitleFocus.bind(this);
         this.handleResize = this.handleResize.bind(this);
     }
