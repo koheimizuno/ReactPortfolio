@@ -1,5 +1,4 @@
 import { Col, Container, Row } from "reactstrap";
-import { Footer } from "./Footer";
 import { AnimatePresence, motion } from 'framer';
 
 import './Title.scss';

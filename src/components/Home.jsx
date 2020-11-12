@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { Col, Container, Row } from "reactstrap";
-import { Footer } from "./Footer";
 import './Home.scss'
 import { Title } from "./Title";
 
