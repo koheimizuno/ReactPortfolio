@@ -1,0 +1,15 @@
+.title{
+    height: 100%;
+    cursor: default;
+    text-align: center;
+    .hover{
+        display: inline-block;
+        border-bottom: 4px solid;
+        transition: ease-in-out 100ms;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            transform: translate(0,-5px);
+        }
+    }
+}

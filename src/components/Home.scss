@@ -1,0 +1,65 @@
+$dark: #282c34bb;
+$light: #ddddddbb;
+html,body{
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+.dark {
+    background-color: $dark;
+    color: #dddddd;
+}
+.light {
+    background-color: $light;
+    color: #333333;
+}
+
+.text-light {
+    color: #dddddd;
+}
+
+.text-dark {
+    color: #333333;
+}
+
+.transition-to-light{
+    background: linear-gradient(to bottom,$dark,$light);
+}
+
+.transition-to-dark {
+    background: linear-gradient(to bottom,$light,$dark);
+}
+
+.blur {
+    backdrop-filter: blur(0.75px) brightness(0.75);
+}
+
+.portfolio {
+    min-height:100vh;
+    background-image: linear-gradient(45deg,blue,purple,blue);
+    background-size: 300%;
+    animation: gradient 15s ease infinite;
+    overflow: hidden;
+}
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.projects {
+    h2 {
+        @media(min-width: 576px) {
+            text-align: left;
+            padding-left: 2rem;
+        }
+        @media(max-width:575.9px) {
+            text-align: center;
+        }
+    }
+}
