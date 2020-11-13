@@ -13,3 +13,19 @@
         }
     }
 }
+
+.focus-button {
+    border: 0;
+    background-color: transparent;
+    color: #dddddd88;
+    position: absolute;
+    transition: color ease-in-out 200ms;
+
+    &:hover{
+        color:#ddddddff
+    }
+
+    &:focus{
+        outline:0;
+    }
+}

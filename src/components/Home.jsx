@@ -12,14 +12,14 @@ export class Home extends Component {
             titleFocus: true
         }
 
-        this.toggleFocus = this.toggleFocus.bind(this);
+        this.toggleTitleFocus = this.toggleTitleFocus.bind(this);
     }
 
     componentDidMount() {
         document.getElementById('loader').remove();
     }
 
-    toggleFocus()
+    toggleTitleFocus()
     {
         this.setState({
             titleFocus: !this.state.titleFocus
@@ -30,8 +30,7 @@ export class Home extends Component {
         return (
             <div className="portfolio">
                 <div style={{height:"100vh", backdropFilter:"blur(4px)"}}>
-                    <Title focus={this.state.titleFocus}/>
-                    <button style={{position:"absolute", bottom:"0"}}onClick={this.toggleFocus}>Change</button>
+                    <Title focus={this.state.titleFocus} onFocusToggle={this.toggleTitleFocus}/>
                 </div>
             </div>
         );
