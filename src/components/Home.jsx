@@ -2,6 +2,7 @@ import { Component } from "react";
 import { Col, Container, Row } from "reactstrap";
 import './Home.scss'
 import { Title } from "./Title";
+import { Tabs } from "./Tabs";
 
 export class Home extends Component {
 
@@ -31,6 +32,7 @@ export class Home extends Component {
             <div className="portfolio">
                 <div style={{height:"100vh", backdropFilter:"blur(4px)"}}>
                     <Title focus={this.state.titleFocus} onFocusToggle={this.toggleTitleFocus}/>
+                    <Tabs visible={!this.state.titleFocus}/>
                 </div>
             </div>
         );
