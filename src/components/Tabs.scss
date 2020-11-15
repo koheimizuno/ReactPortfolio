@@ -1,7 +1,33 @@
-
 .tabs{
     position: absolute;
     bottom:0;
     left:0;
     right:0;
+    font-size: calc(10px + 1vw);
+}
+
+.tabSelector{
+
+    color: #dddddd;
+    text-align: center;
+    cursor: pointer;
+    font-size: calc(12px + 1.5vw);
+    transition: background-color 100ms ease-in-out;
+
+    &.--active{
+        background-color: #282c34bb;
+    }
+}
+
+.hover{
+    color: #dddddd;
+    display: inline-block;
+    border-bottom: 2px solid;
+    transition: ease-in-out 100ms;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: #dddddd;
+        transform: translate(0,-2px);
+    }
 }
