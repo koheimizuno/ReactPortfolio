@@ -20,7 +20,7 @@ export function Title(props) {
         flex: props.focus ? "0 0 100%" : "0 0 50%"
     }
     let h1Css = {
-        fontSize: props.focus ? "8vw" : "4vw"
+        fontSize: props.focus ? "calc(20px + 7.5vw)" : "calc(12px + 2vw)"
     }
     let buttonCss = {
         width: props.focus ? "80px" : "40px",
@@ -34,7 +34,7 @@ export function Title(props) {
         <AnimatePresence>
             <motion.div initial={initialCss} animate={animateCss} className="title vw-100 align-items-center d-flex">
                     <Row className="dark vw-100 mx-auto">
-                        <motion.div className="col" animate={colCss}>
+                        <motion.div className="col" initial={colCss} animate={colCss}>
                             <motion.h1 className="my-1" initial={h1Css} animate={h1Css}>Oliver Beckwith</motion.h1>
                         </motion.div>
                     </Row>
