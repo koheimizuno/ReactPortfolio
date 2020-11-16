@@ -13,13 +13,15 @@ export function Project(props) {
     }
 
     content = (
-        <div className="pb-100 w-100" style={{backgroundImage: `url("${project.img}")`}}>
+        <div className="project-card w-100"
+            style={{ backgroundImage: `url("${project.img}")`, cursor: project.link===undefined?"default":"pointer" }}
+            onClick={project.link===undefined ? null : ()=>{window.open(project.link)}}>
             <p>{project.title}</p>
         </div>
     );
 
     return (
-        <Col>
+        <Col xs="6" sm="4" md="3">
             {content}
         </Col>
     )
