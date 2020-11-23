@@ -14,9 +14,11 @@ export function Project(props) {
 
     content = (
         <div className="project-card w-100"
-            style={{ backgroundImage: `url("${project.img}")`, cursor: project.link===undefined?"default":"pointer" }}
-            onClick={project.link===undefined ? null : ()=>{window.open(project.link)}}>
-            <p>{project.title}</p>
+            style={{ backgroundImage: `url("${project.img}")`}}
+            onClick={props.onClick}>
+                <div className="project-container">
+                    <p>{project.title}</p>
+                </div>
         </div>
     );
 

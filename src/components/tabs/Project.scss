@@ -1,6 +1,37 @@
 .project-card {
+    cursor: pointer;
+    position: relative;
     padding-bottom:100%;
     background-color: #282c34bb;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 1rem;
+
+    .project-container {
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        transition: 1000ms ease-in-out;
+
+        p {
+            margin-top: calc(50% - 1rem);
+            text-align: center;
+        }
+    }
+
+    transition: 200ms ease-in-out;
+
+    &:hover {
+        box-shadow: inset 0px 0px 0.25rem 0.25rem #ddd;
+    }
+}
+
+.project-focused {
+    position: absolute;
+    top: -1rem;
+    left:0;
+    right:0;
+    bottom:0;
 }
