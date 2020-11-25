@@ -2,7 +2,8 @@
     {
         "title": "WebAppDemo",
         "img": "img/github.svg",
-        "link": "https://github.com/OliverBeckwith/WebAppDemo"
+        "link": "https://github.com/OliverBeckwith/WebAppDemo",
+        "description": "A simple web application demonstration to showcase my ability with ASP.Net MVC (with authentication and appropriate routing), React, Data Access (performed with Dapper), Database Management (normalisation of fields etc.) within SQLite3, and more."
     },
     {
         "title": "Test2"
