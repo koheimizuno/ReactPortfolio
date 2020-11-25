@@ -24,7 +24,7 @@
     transition: 200ms ease-in-out;
 
     &:hover {
-        box-shadow: inset 0px 0px 0.25rem 0.25rem #ddd;
+        box-shadow: inset 0px 0px 0.25rem 0.25rem #dddddd88;
     }
 }
 
@@ -34,4 +34,30 @@
     left:0;
     right:0;
     bottom:0;
+
+    button{
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+        border: 0;
+        background-color: transparent;
+        color: #dddddd88;
+        position: absolute;
+        transition: color ease-in-out 200ms;
+
+        &:hover{
+            color:#ddddddff
+        }
+
+        &:focus{
+            outline:0;
+        }
+
+        &.close{
+            left:0;
+        }
+        &.link{
+            right:0;
+        }
+    }
 }

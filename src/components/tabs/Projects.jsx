@@ -1,4 +1,4 @@
-import { motion } from 'framer';
+import { AnimatePresence, motion } from 'framer';
 import { Component, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Project } from './Project';
@@ -62,12 +62,19 @@ export class Projects extends Component {
                 animate={animateCss}
                 exit={exitCss}>
                 <Container style={{position:"relative"}}>
-                    <Row>
-                        {projects}
-                    </Row>
-                    {this.state.focused !== null 
-                    ? <FocusedProject project={this.state.projects[this.state.focused]} onClose={this.closeFocusedProject}/>
-                    : null}
+                    <AnimatePresence>
+                        {this.state.focused==null && 
+                            <motion.div className="row"
+                                initial={initialCss}
+                                animate={animateCss}
+                                exit={exitCss}>
+                                {projects}
+                            </motion.div>
+                        }
+                        {this.state.focused!==null && 
+                            <FocusedProject project={this.state.projects[this.state.focused]} onClose={this.closeFocusedProject}/>
+                        }
+                    </AnimatePresence>
                 </Container>
             </motion.div>
         );
