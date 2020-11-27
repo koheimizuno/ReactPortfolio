@@ -54,7 +54,7 @@ export class Projects extends Component {
 
         if (this.state.projects===null || (this.state.projects && this.state.projects.length == 0))
             projects = <Col>No Projects</Col>;
-        else 
+        else if (this.state.projects)
             projects = this.state.projects.map((p,i) => 
                 {
                     return <Project project={p} onClick={()=>{this.focusProject(i)}}/>
