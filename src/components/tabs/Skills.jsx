@@ -1,6 +1,6 @@
 import { motion } from 'framer';
 
-export function CV(props) {
+export function Skills(props) {
     
     let initialCss = {
         opacity: 0
@@ -17,7 +17,7 @@ export function CV(props) {
             initial={initialCss}
             animate={animateCss}
             exit={exitCss}>
-            <h1>CV</h1>
+            <h1>Skills</h1>
         </motion.div>
     );
 }

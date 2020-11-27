@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer";
 import { Container, Row, Col } from "reactstrap";
 import { About } from "./tabs/About";
 import { Projects } from "./tabs/Projects";
-import { CV } from "./tabs/CV";
+import { Skills } from "./tabs/Skills";
 
 import "./Tabs.scss";
 export class Tabs extends Component {
@@ -37,7 +37,7 @@ export class Tabs extends Component {
         switch (this.state.tab) {
             case 0: tab = <About />; break;
             case 1: tab = <Projects />; break;
-            case 2: tab = <CV />; break;
+            case 2: tab = <Skills />; break;
         }
 
         return this.props.visible &&
@@ -59,7 +59,7 @@ export class Tabs extends Component {
                                 <Col xs={4}
                                     className={`tabSelector ${this.state.tab == 2 ? "--active" : ""}`}
                                     onClick={() => { this.switchTab(2) }}>
-                                    CV
+                                    Skills
                                 </Col>
                             </Row>
                             <div className="dark h-100 overflow-auto pt-3">
