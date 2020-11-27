@@ -52,7 +52,7 @@ export class Projects extends Component {
 
         let projects = null;
 
-        if (!this.state.projects || this.state.projects.length == 0)
+        if (this.state.projects===null || (this.state.projects && this.state.projects.length == 0))
             projects = <Col>No Projects</Col>;
         else 
             projects = this.state.projects.map((p,i) => 
