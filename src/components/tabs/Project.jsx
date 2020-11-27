@@ -13,12 +13,19 @@ export function Project(props) {
     }
 
     content = (
-        <div className="project-card w-100"
-            style={{ backgroundImage: `url("${project.img}")`}}
-            onClick={props.onClick}>
-                <div className="project-container">
-                    <p>{project.title}</p>
-                </div>
+        <div className="project-card w-100" onClick={props.onClick}>
+            {
+                (project.img &&
+                    <img className="background" src={project.img}></img>
+                )
+                ||
+                (project.icon &&
+                    <i className={project.icon}></i>
+                )
+            }
+            <div className="project-container">
+                <p>{project.title}</p>
+            </div>
         </div>
     );
 
