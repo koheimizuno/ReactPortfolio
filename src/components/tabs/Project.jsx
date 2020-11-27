@@ -14,14 +14,8 @@ export function Project(props) {
 
     content = (
         <div className="project-card w-100" onClick={props.onClick}>
-            {
-                (project.img &&
-                    <img className="background" src={project.img}></img>
-                )
-                ||
-                (project.icon &&
-                    <i className={project.icon}></i>
-                )
+            {project.img &&
+                <img className="background" src={project.img}></img>
             }
             <div className="project-container">
                 <p>{project.title}</p>
@@ -30,7 +24,7 @@ export function Project(props) {
     );
 
     return (
-        <Col xs="6" sm="4" md="3">
+        <Col xs="6" sm="6" md="4">
             {content}
         </Col>
     )
