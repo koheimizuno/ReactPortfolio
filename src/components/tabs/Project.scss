@@ -27,13 +27,16 @@
             margin-top: calc(50% - 1rem);
             text-align: center;
         }
+
+        transition: 200ms ease-in-out;
+
+        &:hover {
+            backdrop-filter: blur(4px);
+            box-shadow: inset 0px 0px 0.25rem 0.25rem #dddddd88;
+        }
     }
 
-    transition: 200ms ease-in-out;
-
-    &:hover {
-        box-shadow: inset 0px 0px 0.25rem 0.25rem #dddddd88;
-    }
+    
 }
 
 .project-focused {

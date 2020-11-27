@@ -9,9 +9,12 @@ export class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            projects: [],
+            projects: undefined,
             focused: null
         };
+        
+        this.focusProject = this.focusProject.bind(this);
+        this.closeFocusedProject =  this.closeFocusedProject.bind(this);
     }
 
     componentDidMount() {
@@ -20,12 +23,12 @@ export class Projects extends Component {
 
     async loadProjects() {
         const response = await fetch("projects.json");
-        const projects = await response.json();
-        console.log(projects);
+        let projects;
+        try{
+            projects = await response.json();
+        }
+        catch(e){}
         this.setState({ projects: projects });
-
-        this.focusProject = this.focusProject.bind(this);
-        this.closeFocusedProject =  this.closeFocusedProject.bind(this);
     }
 
     focusProject(id) {
@@ -47,14 +50,15 @@ export class Projects extends Component {
             opacity: 0
         }
 
-        let projects = this.state.projects.length > 0
-            ? this.state.projects.map((p,i) => {
-                return <Project project={p} onClick={()=>{this.focusProject(i)}}/>
-            })
-            : <Col>
-                No projects
-            </Col>
-            ;
+        let projects = null;
+
+        if (!this.state.projects || this.state.projects.length == 0)
+            projects = <Col>No Projects</Col>;
+        else 
+            projects = this.state.projects.map((p,i) => 
+                {
+                    return <Project project={p} onClick={()=>{this.focusProject(i)}}/>
+                });
 
         return (
             <motion.div

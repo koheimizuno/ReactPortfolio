@@ -3,7 +3,21 @@
     bottom:0;
     left:0;
     right:0;
-    font-size: calc(10px + 1vw);
+    font-size: calc(12px + 0.5vw);
+
+    a {
+        text-decoration: underline solid 2px;
+        &:hover{
+            text-decoration: underline solid 1px;
+        }
+
+        &.underline{
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .tabSelector{
@@ -21,13 +35,19 @@
 
 .hover{
     color: #dddddd;
-    display: inline-block;
-    border-bottom: 2px solid;
+    display: block;
     transition: ease-in-out 100ms;
-    text-decoration: none;
     &:hover {
-        text-decoration: none;
         color: #dddddd;
         transform: translate(0,-2px);
     }
+}
+
+.underline {
+    border-bottom: 2px solid;
+}
+
+li{
+    width:fit-content;
+    text-align: justify;
 }
