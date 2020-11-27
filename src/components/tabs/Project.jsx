@@ -15,7 +15,7 @@ export function Project(props) {
     content = (
         <div className="project-card w-100" onClick={props.onClick}>
             {project.img &&
-                <img className="background" src={project.img}></img>
+                <img className="background h-100 w-100" src={project.img}></img>
             }
             <div className="project-container">
                 <p>{project.title}</p>
