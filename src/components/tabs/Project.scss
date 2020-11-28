@@ -2,10 +2,17 @@
     cursor: pointer;
     position: relative;
     padding-bottom:100%;
-    background-color: #282c34bb;
-    background-position: center;
-    background-repeat: no-repeat;
     margin-bottom: 1rem;
+    overflow: hidden        ;
+
+    &:hover{
+        .background{
+            filter: blur(4px);
+        }
+        .project-container{
+            box-shadow: inset 0px 0px 0.25rem 0.25rem #dddddd88;
+        }
+    }
 
     .background {
         position: absolute;
@@ -13,9 +20,13 @@
         bottom:0;
         left:0;
         right:0;
+        
+        transition: 200ms ease-in-out;
     }
 
     .project-container {
+        padding: 1rem;
+
         position: absolute;
         top:0;
         left:0;
@@ -23,20 +34,15 @@
         right:0;
         transition: 1000ms ease-in-out;
 
+        pointer-events: inherit;
+
         p {
             margin-top: calc(50% - 1rem);
             text-align: center;
         }
 
         transition: 200ms ease-in-out;
-
-        &:hover {
-            backdrop-filter: blur(4px);
-            box-shadow: inset 0px 0px 0.25rem 0.25rem #dddddd88;
-        }
     }
-
-    
 }
 
 .project-focused {
