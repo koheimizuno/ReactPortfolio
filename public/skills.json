@@ -1,0 +1,62 @@
+[
+    {
+        "category": "languages",
+        "skills": [
+            {
+                "name": ".NET",
+                "ability": "Strong",
+                "since": 2015
+            },
+            {
+                "name": "Java",
+                "ability": "Strong",
+                "since": 2013
+            },
+            {
+                "name": "HTML & CSS",
+                "ability": "Strong",
+                "since": "2015"
+            },
+            {
+                "name": "Javascript",
+                "ability": "Strong",
+                "since": 2013
+            },
+            {
+                "name": "Python",
+                "ability": "Strong",
+                "since": 2018
+            }
+        ]
+    },
+    {
+        "category": "frameworks",
+        "skills": [
+            {
+                "name": "React",
+                "ability": "Intermediate",
+                "since": 2020
+            },
+            {
+                "name": "ASP.NET",
+                "ability": "Intermediate | MVC, Razor pages",
+                "since": 2019
+            },
+            {
+                "name": "Spring MVC",
+                "ability": "Amateur",
+                "since": 2018
+            }
+        ]
+    },
+    {
+        "category": "tools",
+        "skills": [
+            {
+                "name": "Terminal",
+                "ability": "Strong | Bash, Command Prompt, Powershell",
+                "since": 2013
+            }
+        ]
+    }
+]
