@@ -1,6 +1,5 @@
 import { motion } from 'framer';
 import { Container } from 'reactstrap';
-import './Project.scss'
 
 export function FocusedProject(props) {
 

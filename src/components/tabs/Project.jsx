@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { Col } from 'reactstrap';
-import './Project.scss';
 
 export function Project(props) {
 
