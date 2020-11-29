@@ -1,0 +1,41 @@
+.skill-category{
+    .row{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.skill-box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.5rem;
+
+    cursor: help;
+
+    p{
+        width:100%;
+    }
+    
+    &:hover{
+        box-shadow: inset 0px -2px 0px white;
+        .skill-tooltip{
+            opacity: 1;
+        }
+    }
+}
+
+.skill-tooltip{
+    z-index: 5;
+    position: absolute;
+    bottom:70%;
+    left:0;
+    right:0;
+    padding: 0.5rem;
+    margin-left:auto;
+    margin-right:auto;
+    width:fit-content;
+    transform: opacity 200ms ease-in-out;
+    opacity:0;
+    background-color: #282c34dd;
+}
