@@ -46,17 +46,7 @@ export class Skills extends Component {
         else if (this.state.skills)
             skills = this.state.skills.map((cat) => 
                 {
-                    return <div className="skill-category">
-                        <h1>{cat.category}</h1>
-                        <Row>
-                            {cat.skills.map((skill) => {
-                                return <Col className="skill-box">
-                                        <div className="skill-tooltip">{skill.ability}</div>
-                                        <p className="skill-text">{skill.name}</p>
-                                    </Col>
-                            })}
-                        </Row>
-                    </div>;
+                    return <SkillCategory name={cat.category} skills={cat.skills}/>
                 });
 
         return (
@@ -69,4 +59,22 @@ export class Skills extends Component {
             </motion.div>
         );
     }
+}
+
+export function SkillCategory(props){
+    return <div className="skill-category">
+        <h1>{props.name}</h1>
+        <Row>
+            {props.skills.map((skill) => {
+                return <Skill name={skill.name} ability={skill.ability}/>
+            })}
+        </Row>
+    </div>;
+}
+
+export function Skill(props){
+    return <Col className="skill-box">
+        <div className="skill-tooltip">{props.ability}</div>
+        <p className="skill-text">{props.name}</p>
+    </Col>;
 }

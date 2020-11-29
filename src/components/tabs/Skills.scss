@@ -3,6 +3,10 @@
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
+
+    h1{
+        text-transform: capitalize;
+    }
 }
 
 .skill-box{
@@ -14,9 +18,10 @@
     cursor: help;
 
     p{
+        font-size: calc(14px + 0.5vw);
         width:100%;
     }
-    
+
     &:hover{
         box-shadow: inset 0px -2px 0px white;
         .skill-tooltip{
