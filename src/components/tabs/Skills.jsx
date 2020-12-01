@@ -73,7 +73,7 @@ export function SkillCategory(props){
 }
 
 export function Skill(props){
-    return <Col className="skill-box">
+    return <Col xs="6" sm="auto" className="skill-box">
         <div className="skill-tooltip">{props.ability}</div>
         <p className="skill-text">{props.name}</p>
     </Col>;

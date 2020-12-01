@@ -11,9 +11,12 @@
 
 .skill-box{
     display: flex;
+    flex-basis: 0 !important;
+    flex-grow: 1 !important;
     align-items: center;
     text-align: center;
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
 
     cursor: help;
 
@@ -43,4 +46,5 @@
     transform: opacity 200ms ease-in-out;
     opacity:0;
     background-color: #282c34dd;
+    pointer-events: none;
 }
