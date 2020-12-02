@@ -45,7 +45,7 @@ export class Tabs extends Component {
                 <AnimatePresence>
                     <motion.div className="tabs" initial={initialCss} animate={animateCss}>
                         <Container className="h-100 d-flex flex-column">
-                            <Row className="mx-0">
+                            <Row className="mx-0 noselect">
                                 <Col xs={4}
                                     className={`tabSelector ${this.state.tab == 0 ? "--active" : ""}`}
                                     onClick={() => { this.switchTab(0) }}>

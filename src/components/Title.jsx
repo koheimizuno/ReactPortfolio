@@ -35,11 +35,11 @@ export function Title(props) {
             <motion.div initial={initialCss} animate={animateCss} className="title vw-100 align-items-center d-flex">
                     <Row className="dark vw-100 mx-auto">
                         <motion.div className="col" initial={colCss} animate={colCss}>
-                            <motion.h1 className="my-1" initial={h1Css} animate={h1Css}>Oliver Beckwith</motion.h1>
+                            <motion.h1 className="my-1 noselect" initial={h1Css} animate={h1Css}>Oliver Beckwith</motion.h1>
                         </motion.div>
                     </Row>
                     <motion.button className="focus-button" animate={buttonCss} onClick={props.onFocusToggle}>
-                        <i className="fas fa-chevron-up"></i>
+                        <i className="noselect fas fa-chevron-up"></i>
                     </motion.button>
             </motion.div>
         </AnimatePresence>
