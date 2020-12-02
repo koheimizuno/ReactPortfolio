@@ -28,9 +28,11 @@ export class Home extends Component {
     }
 
     render() {
+        let height = `${window.innerHeight}px`;
+
         return (
             <div className="portfolio">
-                <div style={{height:"100vh", backdropFilter:"blur(4px)"}}>
+                <div style={{height:height, backdropFilter:"blur(4px)"}}>
                     <Title focus={this.state.titleFocus} onFocusToggle={this.toggleTitleFocus}/>
                     <Tabs visible={!this.state.titleFocus}/>
                 </div>

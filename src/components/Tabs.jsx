@@ -26,11 +26,14 @@ export class Tabs extends Component {
     }
 
     render() {
+
+        let height = `${window.innerHeight*0.85}px`;
+
         let initialCss = {
-            height: "0vh"
+            height: "0px"
         };
         let animateCss = {
-            height: "85vh"
+            height: height
         }
 
         let tab;
