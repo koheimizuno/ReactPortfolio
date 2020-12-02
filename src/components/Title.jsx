@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from 'framer';
 import './Title.scss';
 export function Title(props) {
 
+    let height = `${window.innerHeight}px`;
+
     let initialCss = {
         position: "absolute",
         height: 0,
@@ -12,7 +14,7 @@ export function Title(props) {
     let animateCss = {
         position: "absolute",
         height: "auto",
-        minHeight: props.focus ? "100vh" : "1vh",
+        minHeight: props.focus ? height : "0px",
         left:0,
         right:0,
     };
