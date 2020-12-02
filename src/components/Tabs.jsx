@@ -62,7 +62,7 @@ export class Tabs extends Component {
                                     Skills
                                 </Col>
                             </Row>
-                            <div className="dark h-100 overflow-auto pt-3">
+                            <div className="dark h-100 overflow-auto pt-3 pb-2">
                                 <AnimatePresence>
                                     {tab}
                                 </AnimatePresence>
