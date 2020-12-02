@@ -25,7 +25,7 @@
         width:100%;
     }
 
-    transition: 200ms ease-in-out;
+    transition: 100ms ease-in-out;
 
     &:hover{
         box-shadow: inset 0px -2px 0px white;
@@ -45,7 +45,7 @@
     margin-left:auto;
     margin-right:auto;
     width:fit-content;
-    transition: opacity 200ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
     opacity:0;
     background-color: #282c34dd;
     pointer-events: none;

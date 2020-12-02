@@ -24,7 +24,7 @@
         
         opacity: 0.5;
 
-        transition: 200ms ease-in-out;
+        transition: 100ms ease-in-out;
     }
 
     .project-container {
@@ -38,7 +38,6 @@
         left:0;
         bottom:0;
         right:0;
-        transition: 1000ms ease-in-out;
 
         pointer-events: inherit;
 
@@ -48,7 +47,7 @@
             text-align: center;
         }
 
-        transition: 200ms ease-in-out;
+        transition: 100ms ease-in-out;
     }
 }
 
@@ -73,7 +72,7 @@
         background-color: transparent;
         color: #dddddd88;
         position: absolute;
-        transition: color ease-in-out 200ms;
+        transition: color ease-in-out 100ms;
 
         &:hover{
             color:#ddddddff
