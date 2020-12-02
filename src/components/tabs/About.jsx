@@ -28,6 +28,18 @@ export function About(props) {
                     Driven to create the best projects that I feel I am capable of, I am always pushing myself into new and challenging areas of learning and research. 
                     I find well documented code with appropriate variable naming conventions extremely satisfying, and so always strive to keep my own projects this way where appropriate.
                 </p>
+                <h1>Education</h1>
+                <p>
+                    <strong>MSc Big Data Science and Technology</strong> - <em>Distinction (Avg. 83)</em><br/>
+                    This course focused on big data visualisation and data management, with further aspects of artificial intelligence and machine learning.<br/>
+                    My dissertation topic regarded transferrable models within reinforcement learning.<br/>
+                    This degree was funded entirely by a competitive scholarship (See below).
+                </p>
+                <p>
+                    <strong>BSc Computer Science for Games</strong> - <em>1st Class Honours with Merit</em><br/>
+                    This was my real introduction to programming, learning about data structures, networking, concurrent and distributed system, and more.<br/>
+                    My final year project was about creating natural behaviours in game agents to make less predictable artificial intelligence.
+                </p>
                 <h2 className="pt-3">Achievements</h2>
                 <div className="achievements">
                     <ul>
