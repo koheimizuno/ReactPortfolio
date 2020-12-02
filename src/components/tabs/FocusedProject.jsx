@@ -14,7 +14,7 @@ export function FocusedProject(props) {
             }
             <Container className="pt-5">
                 <h1>{props.project.title}</h1>
-                <p>{props.project.description}</p>
+                {props.project.description.map((line) => <p>{line}</p>)}
             </Container>
         </motion.div>
     );

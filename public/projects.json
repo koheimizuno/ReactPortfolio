@@ -3,11 +3,36 @@
         "title": "WebAppDemo",
         "img": "img/github.svg",
         "link": "https://github.com/OliverBeckwith/WebAppDemo",
-        "description": "A simple web application demonstration to showcase my ability with ASP.Net MVC (with authentication and appropriate routing), React, Data Access (performed with Dapper), Database Management (normalisation of fields etc.) within SQLite3, and more."
+        "description": [
+            "A simple web application demonstration to showcase my ability with ASP.Net MVC (with authentication and appropriate routing), React, Data Access (performed with Dapper), Database Management (normalisation of fields etc.) within SQLite3, and more.",
+            "The code is available on GitHub (linked in top right)."
+        ]
     },
     {
         "title": "ShopAppy Social Media Solution Prototype",
         "img": "img/shopping-bag-solid.svg",
-        "description": "A prototype solution was created to allow sellers to connect their social media accounts, allowing the software to create posts for them. This made use of natural language processing and sentiment analysis with existing social media posts, and event triggers related to special occasions or new products for sale."
+        "description": [
+            "A prototype solution was created to allow sellers to connect their social media accounts, allowing the software to create posts for them.", 
+            "This made use of natural language processing and sentiment analysis with existing social media posts, and event triggers related to special occasions or new products for sale."
+        ]
+    },
+    {
+        "title": "Portfolio",
+        "img": "img/portrait-solid.svg",
+        "link": "https://github.com/OliverBeckwith/ReactPortfolio",
+        "description": [
+            "The portfolio that you can see now was created to showcase my abilities and demonstrate my proficiency with React.", 
+            "It was also created to update the old portfolio that was slow and outdated.",
+            "The code for this portfolio is available on GitHub (linked in top right)."
+        ]
+    },
+    {
+        "title": "Old Portfolio",
+        "img": "img/portrait-solid.svg",
+        "link": "https://oliverbeckwith.azurewebsites.net",
+        "description": [
+            "This portfolio was created using ASP.NET Razor pages. The styling and code were outdated so this has since been replaced with the current portfolio.",
+            "The old portfolio is still hosted, and is linked in the top right."
+        ]
     }
 ]
