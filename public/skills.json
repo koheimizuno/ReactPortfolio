@@ -3,29 +3,28 @@
         "category": "languages",
         "skills": [
             {
-                "name": ".NET",
-                "ability": "Strong",
-                "since": 2015
+                "name": "C# (.NET)",
+                "ability": "Strong"
             },
             {
                 "name": "Java",
-                "ability": "Strong",
-                "since": 2013
+                "ability": "Strong"
             },
             {
                 "name": "HTML & CSS",
-                "ability": "Strong",
-                "since": "2015"
+                "ability": "Strong | Bootstrap, FontAwesome, SCSS"
             },
             {
                 "name": "Javascript",
-                "ability": "Strong",
-                "since": 2013
+                "ability": "Strong | JQuery"
             },
             {
                 "name": "Python",
-                "ability": "Strong",
-                "since": 2018
+                "ability": "Strong | numpy, pandas, matplotlib"
+            },
+            {
+                "name": "SQL",
+                "ability": "Strong | MySQL, SQLite, PostgreSQL"
             }
         ]
     },
@@ -34,18 +33,15 @@
         "skills": [
             {
                 "name": "React",
-                "ability": "Intermediate",
-                "since": 2020
+                "ability": "Intermediate | Components, Hooks, JSX"
             },
             {
                 "name": "ASP.NET",
-                "ability": "Intermediate | MVC, Razor pages",
-                "since": 2019
+                "ability": "Intermediate | MVC, Razor pages"
             },
             {
                 "name": "Spring MVC",
-                "ability": "Amateur",
-                "since": 2018
+                "ability": "Amateur"
             }
         ]
     },
@@ -54,8 +50,19 @@
         "skills": [
             {
                 "name": "Terminal",
-                "ability": "Strong | Bash, Command Prompt, Powershell",
-                "since": 2013
+                "ability": "Strong | Bash, Command Prompt, Powershell"
+            },
+            {
+                "name": "Visual Studio Code",
+                "ability": "Strong"
+            },
+            {
+                "name": "JetBrains IDEs",
+                "ability": "Intermediate"
+            },
+            {
+                "name": "MongoDB",
+                "ability": "Competent"
             }
         ]
     }
