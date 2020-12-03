@@ -10,14 +10,22 @@ export class Home extends Component {
         super(props);
 
         this.state = {
-            titleFocus: true
+            titleFocus: true,
+            height: window.innerHeight
         }
 
         this.toggleTitleFocus = this.toggleTitleFocus.bind(this);
+        this.handleResize = this.handleResize.bind(this);
     }
 
     componentDidMount() {
         document.getElementById('loader').remove();
+
+        window.addEventListener("resize",this.handleResize)
+    }
+
+    handleResize(){
+        this.setState({height:window.innerHeight});
     }
 
     toggleTitleFocus()
@@ -28,10 +36,9 @@ export class Home extends Component {
     }
 
     render() {
-        let height = `${window.innerHeight}px`;
 
         return (
-            <div className="portfolio" style={{height:height}}>
+            <div className="portfolio" style={{height:`${this.state.height}px`}}>
                 <div style={{height:"100%", backdropFilter:"blur(4px)"}}>
                     <Title focus={this.state.titleFocus} onFocusToggle={this.toggleTitleFocus}/>
                     <Tabs visible={!this.state.titleFocus}/>
