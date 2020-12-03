@@ -18,7 +18,7 @@
     },
     {
         "title": "Portfolio",
-        "img": "img/portrait-solid.svg",
+        "img": "img/react-brands.svg",
         "link": "https://github.com/OliverBeckwith/ReactPortfolio",
         "description": [
             "The portfolio that you can see now was created to showcase my abilities and demonstrate my proficiency with React.", 
@@ -39,6 +39,7 @@
         "title": "Natural Behaviours of Game Agents",
         "context": "BSc Computer Science for Games",
         "img": "img/walking-solid.svg",
+        "link": "https://1drv.ms/b/s!AimuG9lPDS1emONjTLZF7praY-DhyA?e=I7gZsP",
         "description": [
             "This was my final year project researching into making game agents that were less predictable.",
             "Using Unity and .NET, a set of game agents were created that had their behaviour split into independent components: sense, movement, logic.",
@@ -49,6 +50,7 @@
         "title": "Investigating Multi-Directional Transfer Learning for Generalised Agents",
         "context": "MSc Big Data Science & Technology",
         "img": "img/people-arrows-solid.svg",
+        "link": "https://1drv.ms/b/s!AimuG9lPDS1emONd48y2CTNMlRWiGw?e=0Q1eRa",
         "description": [
             "This project looked into the capacity of off-the-shelf reinforcement learning algorithms for transferring to new environments.",
             "Using Stable Baselines (based on OpenAI Baselines), the Proximal Policy Optimisation (PPO) algorithm and the Actor-Critic with Experience Replay (ACER) algorithm were tested on Atari game environments (OpenAI Gym).",
