@@ -34,5 +34,26 @@
             "This portfolio was created using ASP.NET Razor pages. The styling and code were outdated so this has since been replaced with the current portfolio.",
             "The old portfolio is still hosted, and is linked in the top right."
         ]
+    },
+    {
+        "title": "Natural Behaviours of Game Agents",
+        "context": "BSc Computer Science for Games",
+        "img": "img/walking-solid.svg",
+        "description": [
+            "This was my final year project researching into making game agents that were less predictable.",
+            "Using Unity and .NET, a set of game agents were created that had their behaviour split into independent components: sense, movement, logic.",
+            "The agents were modelled on a psychological theory of the mind known as BDI (Belief, Desire, Intention), in which each agent had its own perception (belief) of the environment, goals (desire) it wanted to achieve, and a plan by which it wanted to achieve them (intention)."
+        ]
+    },
+    {
+        "title": "Investigating Multi-Directional Transfer Learning for Generalised Agents",
+        "context": "MSc Big Data Science & Technology",
+        "img": "img/people-arrows-solid.svg",
+        "description": [
+            "This project looked into the capacity of off-the-shelf reinforcement learning algorithms for transferring to new environments.",
+            "Using Stable Baselines (based on OpenAI Baselines), the Proximal Policy Optimisation (PPO) algorithm and the Actor-Critic with Experience Replay (ACER) algorithm were tested on Atari game environments (OpenAI Gym).",
+            "This research found interesting results regarding the propensity for these approaches to adapt to new environments, although further work would be needed to achieve good results.",
+            "This project was given a mark of 82."
+        ]
     }
 ]
