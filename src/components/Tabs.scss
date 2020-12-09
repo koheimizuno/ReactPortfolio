@@ -1,3 +1,6 @@
+$faint: #282c3433;
+$dark: #282c3488;
+
 .tabs{
     position: absolute;
     bottom:0;
@@ -27,9 +30,9 @@
     cursor: pointer;
     font-size: calc(12px + 1.5vw);
     transition: background-color 100ms ease-in-out;
-
+    background-color: $faint;
     &.--active{
-        background-color: #282c34bb;
+        background-color: $dark;
     }
 }
 
