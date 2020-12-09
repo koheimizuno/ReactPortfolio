@@ -13,7 +13,7 @@
         "img": "img/share-alt-solid.svg",
         "description": [
             "A prototype solution was created to allow clients to connect their social media accounts, allowing the software to create posts for them.", 
-            "This made use of natural language processing and sentiment analysis with existing social media posts, and event triggers related to special occasions or new products for sale.",
+            "This made use of natural language processing and sentiment analysis with existing social media posts, and event triggers such as special occasions, new updates, or new products.",
             "This was created with Spring MVC and MongoDB."
         ]
     },
