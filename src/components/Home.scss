@@ -21,14 +21,6 @@ html,body{
     color: #333333;
 }
 
-.transition-to-light{
-    background: linear-gradient(to bottom,$dark,$light);
-}
-
-.transition-to-dark {
-    background: linear-gradient(to bottom,$light,$dark);
-}
-
 .blur {
     backdrop-filter: blur(0.75px) brightness(0.75);
 }

@@ -61,7 +61,13 @@
     h1{
         font-size: calc(14px + 2vw);
         font-weight: 400;
-
+        text-align: center;
+    }
+    h2{
+        font-weight: bolder;
+        font-style: italic;
+        font-size: calc(13px + 0.5vw);
+        text-align: center;
     }
 
     button{

@@ -14,7 +14,7 @@ export function FocusedProject(props) {
             }
             <Container className="pt-5">
                 <h1>{props.project.title}</h1>
-                {props.project.context && <strong><em>{props.project.context}</em></strong>}
+                {props.project.context && <h2>{props.project.context}</h2>}
                 <div className="my-4"></div>
                 {props.project.description.map((line) => <p>{line}</p>)}
             </Container>
