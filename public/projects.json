@@ -9,11 +9,12 @@
         ]
     },
     {
-        "title": "ShopAppy Social Media Solution Prototype",
-        "img": "img/shopping-bag-solid.svg",
+        "title": "Social Media Solution Prototype",
+        "img": "img/share-alt-solid.svg",
         "description": [
-            "A prototype solution was created to allow sellers to connect their social media accounts, allowing the software to create posts for them.", 
-            "This made use of natural language processing and sentiment analysis with existing social media posts, and event triggers related to special occasions or new products for sale."
+            "A prototype solution was created to allow clients to connect their social media accounts, allowing the software to create posts for them.", 
+            "This made use of natural language processing and sentiment analysis with existing social media posts, and event triggers related to special occasions or new products for sale.",
+            "This was created with Spring MVC and MongoDB."
         ]
     },
     {
